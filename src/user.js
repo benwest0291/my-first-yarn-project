@@ -1,13 +1,8 @@
+// ./src/user.js
+import { capitalize } from "./helpers";
+
 function greetUser(name) {
-  console.log(`Hello ${name}`);
-  console.log("hello from ben");
+  console.log(`Hello ${capitalize(name)}`);
 }
 
 greetUser("anonymous");
-
-function greetUserTwo(name) {
-  console.log(`Hello ${name}`);
-}
-
-greetUser("anonymous");
-greetUserTwo("anonymous");

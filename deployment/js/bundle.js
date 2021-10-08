@@ -7,7 +7,18 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/helpers.js":
+/*!************************!*\
+  !*** ./src/helpers.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"capitalize\": () => (/* binding */ capitalize),\n/* harmony export */   \"pluralize\": () => (/* binding */ pluralize)\n/* harmony export */ });\n// ./src/helpers.js\nfunction capitalize(word) {\n  return word[0].toUpperCase() + word.substr(1).toLowerCase();\n}\n\nfunction pluralize(word) {\n  return word + \"s\"; // TODO: Needs better implementation\n}\n\n\n\n\n//# sourceURL=webpack://my-first-yarn-project/./src/helpers.js?");
+
+/***/ }),
 
 /***/ "./src/index.js":
 /*!**********************!*\
@@ -15,8 +26,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./user */ \"./src/user.js\");\n/* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_user__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack://my-first-yarn-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./user */ \"./src/user.js\");\n\n\n\n//# sourceURL=webpack://my-first-yarn-project/./src/index.js?");
 
 /***/ }),
 
@@ -24,9 +34,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _use
 /*!*********************!*\
   !*** ./src/user.js ***!
   \*********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("function greetUser(name) {\n  console.log(`Hello ${name}`);\n  console.log(\"hello from ben\");\n}\n\ngreetUser(\"anonymous\");\n\nfunction greetUserTwo(name) {\n  console.log(`Hello ${name}`);\n}\n\ngreetUser(\"anonymous\");\ngreetUserTwo(\"anonymous\");\n\n\n//# sourceURL=webpack://my-first-yarn-project/./src/user.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./helpers */ \"./src/helpers.js\");\n// ./src/user.js\n\n\nfunction greetUser(name) {\n  console.log(`Hello ${(0,_helpers__WEBPACK_IMPORTED_MODULE_0__.capitalize)(name)}`);\n}\n\ngreetUser(\"anonymous\");\n\n\n//# sourceURL=webpack://my-first-yarn-project/./src/user.js?");
 
 /***/ })
 
@@ -57,18 +67,6 @@ eval("function greetUser(name) {\n  console.log(`Hello ${name}`);\n  console.log
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
